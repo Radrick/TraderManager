@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TraderManager</string>
+    <string name="input_point">Ponto de Entrada</string>
+    <string name="output_point">Ponto de saída</string>
+    <string name="total_point">Total de pontos</string>
+    <string name="add_operation">Adicionar operação</string>
+</resources>

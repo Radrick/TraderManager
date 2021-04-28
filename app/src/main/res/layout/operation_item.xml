@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    android:elevation="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_point"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/input_point_item"
+            app:layout_constraintStart_toStartOf="@+id/input_point_item"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/input_point_item"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/output_point_item"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/output_point"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/output_point_item"
+            app:layout_constraintStart_toStartOf="@+id/output_point_item"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/output_point_item"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/input_point_item"
+            app:layout_constraintEnd_toStartOf="@id/total_point_item"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/total_point"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/total_point_item"
+            app:layout_constraintStart_toStartOf="@+id/total_point_item"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/total_point_item"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/output_point_item"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
