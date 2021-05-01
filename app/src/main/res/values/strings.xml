@@ -4,4 +4,5 @@
     <string name="output_point">Ponto de saída</string>
     <string name="total_point">Total de pontos</string>
     <string name="add_operation">Adicionar operação</string>
+    <string name="quantity_contract">Quantidade de contratos</string>
 </resources>
